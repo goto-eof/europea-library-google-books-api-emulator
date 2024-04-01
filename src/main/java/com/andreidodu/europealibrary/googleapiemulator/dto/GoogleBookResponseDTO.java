@@ -1,4 +1,4 @@
-package com.andreidodu.EuropeaLibraryGoogleApiEmulator.dto;
+package com.andreidodu.europealibrary.googleapiemulator.dto;
 
 import ch.qos.logback.core.util.COWArrayList;
 import lombok.Getter;
