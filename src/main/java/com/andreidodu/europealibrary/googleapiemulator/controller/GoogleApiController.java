@@ -26,9 +26,11 @@ public class GoogleApiController {
         log.info("counter={}", this.applicationConfigurationBean.getCounter());
         if (this.applicationConfigurationBean.getCounter() > ApplicationConfiguration.MAX_NUMBER_REQUESTS_ALLOWED) {
             this.applicationConfigurationBean.setCounter(0);
+            log.info("KO");
             return ResponseEntity.badRequest().build();
         }
         GoogleBookResponseDTO bookInfo = buildBookInfo();
+        log.info("OK: {}", bookInfo);
         return ResponseEntity.ok(bookInfo);
     }
 
