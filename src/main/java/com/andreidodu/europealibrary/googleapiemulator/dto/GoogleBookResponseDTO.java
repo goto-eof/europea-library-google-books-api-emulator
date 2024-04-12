@@ -1,9 +1,7 @@
 package com.andreidodu.europealibrary.googleapiemulator.dto;
 
 import ch.qos.logback.core.util.COWArrayList;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,6 +43,8 @@ public class GoogleBookResponseDTO {
             @Getter
             @Setter
             @ToString
+            @AllArgsConstructor
+            @NoArgsConstructor
             public static class IndustryIdentifierDTO {
                 private String type;
                 private String identifier;

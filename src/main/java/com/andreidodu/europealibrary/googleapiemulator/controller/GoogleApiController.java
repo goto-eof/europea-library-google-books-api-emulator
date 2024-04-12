@@ -44,11 +44,11 @@ public class GoogleApiController {
         List<String> authors = new ArrayList<>();
         authors.add("Jackie Chang");
         authors.add("John Smith");
-        authors.add("Mario Verdi");
+        authors.add("Buzduganu");
         volumeInfo.setAuthors(authors);
 
-        volumeInfo.setPublisher("Andrei");
-
+        volumeInfo.setPublisher("Liber Liber");
+        volumeInfo.setTitle("Storia della letteratura italiana del cav. Abate Girolamo Tiraboschi – Tomo 8. – Parte 1: Dall'anno MDC. fino all'anno MDCC.");
         volumeInfo.setDescription("Hello world!");
 
         List<String> categories = new ArrayList<>();
@@ -63,6 +63,10 @@ public class GoogleApiController {
         volumeInfo.setLanguage("English");
         volumeInfo.setAverageRating(5D);
         volumeInfo.setRatingsCount(100L);
+
+        List<GoogleBookResponseDTO.GoogleBookItemDTO.VolumeInfoDTO.IndustryIdentifierDTO> industryIdentifiers = new ArrayList<>();
+        industryIdentifiers.add(new GoogleBookResponseDTO.GoogleBookItemDTO.VolumeInfoDTO.IndustryIdentifierDTO("isbn", "9988828101444"));
+        volumeInfo.setIndustryIdentifiers(industryIdentifiers);
         return bookInfo;
     }
 
