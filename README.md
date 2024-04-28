@@ -1,1 +1,1 @@
-This solution belongs to the [Europea Library](https://github.com/goto-eof/europea-library-server) project. This software is an simulator of Google Books API, used to test Europea Library Server application. 
+This solution belongs to the [Europea Library](https://github.com/goto-eof/europea-library-server) project. This software is a simulator of Google Books API, used to test Europea Library Server application. 
